@@ -24,7 +24,7 @@ Snippet for rendering a modal element.
       class="slideout__trigger--close slideout__trigger-recover-password__wrapper slideout__trigger-general-modal__wrapper"
     >
       <button
-        class="slideout__trigger-recover-password slideout__trigger-general-modal js-modal-close"
+        class="slideout__trigger-recover-password slideout__trigger-general-modal"
         aria-controls="{{ id }}"
         aria-label="Close modal"
         type="button"
@@ -38,7 +38,7 @@ Snippet for rendering a modal element.
 
     <!-- Content -->
     <div class="modal__inner-content-container">
-      {{ content | default: '<p>Modal content is empty!</p>' }}
+      {{ content }}
     </div><!-- /.modal__inner-content-container -->
   </div><!-- /.modal__inner-wrapper -->
 </div><!-- /.modal -->
